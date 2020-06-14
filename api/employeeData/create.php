@@ -6,22 +6,22 @@
   header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
 
   include_once '../../config/Database.php';
-  include_once '../../models/Post.php';
+  include_once '../../models/Employeedata.php';
 
   // Instantiate DB & connect
   $database = new Database();
   $db = $database->connect();
 
   // Instantiate blog post object
-  $post = new Post($db);
+  $post = new Employeedata($db);
 
   // Get raw posted data
   $data = json_decode(file_get_contents("php://input"));
 
-  $post->title = $data->title;
-  $post->body = $data->body;
-  $post->author = $data->author;
-  $post->category_id = $data->category_id;
+  $post->noIC = $data->noIC;
+  $post->nama = $data->nama;
+  $post->emel = $data->emel;
+  $post->stationCode = $data->stationCode;
 
   // Create post
   if($post->create()) {

@@ -14,7 +14,7 @@
   $post = new Employeedata($db);
 
   // Get ID
-  $post->id = isset($_GET['id']) ? $_GET['id'] : die();
+  $post->noIC = isset($_GET['noIC']) ? $_GET['noIC'] : die();
 
   // Get post
   $post->read_single();
