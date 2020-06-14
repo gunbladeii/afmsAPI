@@ -63,14 +63,14 @@
           $query = 'SELECT id, noIC, nama, emel, sex, dob, pob, nationality, race, religion, marriage, childrenNo, address, noTel, lesenNo, lesenExp, noPlate, roadtaxNo, vehicleModel, vehicleYear, pdrmRecordNo, caseNo, employeeStatus, stationCode, accNum, codeBank
                                 FROM ' . $this->table . '
                                     WHERE
-                                      id = ?
+                                      noIC = ?
                                     LIMIT 0,1';
 
           // Prepare statement
           $stmt = $this->conn->prepare($query);
 
           // Bind ID
-          $stmt->bindParam(1, $this->id);
+          $stmt->bindParam(1, $this->noIC);
 
           // Execute query
           $stmt->execute();
