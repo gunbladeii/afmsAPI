@@ -4,14 +4,14 @@
   header('Content-Type: application/json');
 
   include_once '../../config/Database.php';
-  include_once '../../models/Post.php';
+  include_once '../../models/Employeedata.php';
 
   // Instantiate DB & connect
   $database = new Database();
   $db = $database->connect();
 
   // Instantiate blog post object
-  $post = new Post($db);
+  $post = new Employeedata($db);
 
   // Get ID
   $post->id = isset($_GET['id']) ? $_GET['id'] : die();
