@@ -23,7 +23,7 @@
     public $lesenExp;
     public $noPlate;
     public $roadtaxNo;
-    public $vehichleModel;
+    public $vehicleModel;
     public $vehicleYear;
     public $pdrmRecordNo;
     public $caseNo;
@@ -43,7 +43,7 @@
     // Get employeeData
     public function read() {
       // Create query
-      $query = 'SELECT id, noIC, nama, emel, sex, dob, pob, nationality, race, religion, marriage, childrenNo, address, noTel, lesenNo, lesenExp, noPlate, roadtaxNo, vehichleModel, vehicleYear, pdrmRecordNo, caseNo, employeeStatus, stationCode, accNum, codeBank
+      $query = 'SELECT id, noIC, nama, emel, sex, dob, pob, nationality, race, religion, marriage, childrenNo, address, noTel, lesenNo, lesenExp, noPlate, roadtaxNo, vehicleModel, vehicleYear, pdrmRecordNo, caseNo, employeeStatus, stationCode, accNum, codeBank
                                 FROM ' . $this->table . ' 
                                 ORDER BY
                                   nama ASC';
@@ -60,7 +60,7 @@
     // Get Single Post
     public function read_single() {
           // Create query
-          $query = 'SELECT id, noIC, nama, emel, sex, dob, pob, nationality, race, religion, marriage, childrenNo, address, noTel, lesenNo, lesenExp, noPlate, roadtaxNo, vehichleModel, vehicleYear, pdrmRecordNo, caseNo, employeeStatus, stationCode, accNum, codeBank
+          $query = 'SELECT id, noIC, nama, emel, sex, dob, pob, nationality, race, religion, marriage, childrenNo, address, noTel, lesenNo, lesenExp, noPlate, roadtaxNo, vehicleModel, vehicleYear, pdrmRecordNo, caseNo, employeeStatus, stationCode, accNum, codeBank
                                 FROM ' . $this->table . '
                                     WHERE
                                       id = ?
@@ -96,7 +96,7 @@
           $this->lesenExp = $row['lesenExp'];
           $this->noPlate = $row['noPlate'];
           $this->roadtaxNo = $row['roadtaxNo'];
-          $this->vehichleModel = $row['vehichleModel'];
+          $this->vehicleModel = $row['vehicleModel'];
           $this->vehicleYear = $row['vehicleYear'];
           $this->pdrmRecordNo = $row['pdrmRecordNo'];
           $this->caseNo = $row['caseNo'];
