@@ -152,15 +152,15 @@
           // Clean data
           $this->nama = htmlspecialchars(strip_tags($this->nama));
           $this->emel = htmlspecialchars(strip_tags($this->emel));
-          $this->sex = htmlspecialchars(strip_tags($this->sex));
-          $this->dob = htmlspecialchars(strip_tags($this->dob));
+          $this->stationCode = htmlspecialchars(strip_tags($this->stationCode));
+          $this->employeeStatus = htmlspecialchars(strip_tags($this->employeeStatus));
           $this->noIC = htmlspecialchars(strip_tags($this->noIC));
 
           // Bind data
           $stmt->bindParam(':nama', $this->nama);
           $stmt->bindParam(':emel', $this->emel);
-          $stmt->bindParam(':sex', $this->sex);
-          $stmt->bindParam(':dob', $this->dob);
+          $stmt->bindParam(':stationCode', $this->stationCode);
+          $stmt->bindParam(':employeeStatus', $this->employeeStatus);
           $stmt->bindParam(':noIC', $this->noIC);
 
           // Execute query
