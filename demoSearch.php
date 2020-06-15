@@ -8,7 +8,7 @@
 	</form>
 	<div id="filter-records"></div>
   </div>
-</body>
+
 <script>
 $('#txt-search').keyup(function(){
             var searchField = $(this).val();
@@ -41,4 +41,5 @@ $('#txt-search').keyup(function(){
 			  $('#filter-records').html(output);
         });
  </script>
+ </body>
  </html>
