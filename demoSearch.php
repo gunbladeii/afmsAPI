@@ -2,10 +2,17 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=js-tutorials.com&amp;callback=_gfp_s_&amp;client=ca-pub-1657751670778791&amp;cookie=ID%3De9bf550bafd7f6f8%3AT%3D1592218304%3AS%3DALNI_MaX7esOgq_i4nIHaMZPj4OnT5ZBzA&amp;crv=1"></script><script src="https://pagead2.googlesyndication.com/pagead/js/r20200609/r20190131/show_ads_impl_fy2019.js" id="google_shimpl"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script>
+  <script src="https://partner.googleadservices.com/gampad/cookie.js?domain=js-tutorials.com&amp;callback=_gfp_s_&amp;client=ca-pub-1657751670778791&amp;cookie=ID%3De9bf550bafd7f6f8%3AT%3D1592218304%3AS%3DALNI_MaX7esOgq_i4nIHaMZPj4OnT5ZBzA&amp;crv=1"></script>
+  <script src="https://pagead2.googlesyndication.com/pagead/js/r20200609/r20190131/show_ads_impl_fy2019.js" id="google_shimpl"></script>
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <title>Test JSON</title>
-<link rel="preload" href="https://adservice.google.com.my/adsid/integrator.js?domain=js-tutorials.com" as="script"><script type="text/javascript" src="https://adservice.google.com.my/adsid/integrator.js?domain=js-tutorials.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=js-tutorials.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=js-tutorials.com"></script>
+<link rel="preload" href="https://adservice.google.com.my/adsid/integrator.js?domain=js-tutorials.com" as="script">
+<script type="text/javascript" src="https://adservice.google.com.my/adsid/integrator.js?domain=js-tutorials.com"></script>
+<link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=js-tutorials.com" as="script">
+<script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=js-tutorials.com"></script>
 
 </head>
 <body>
@@ -53,11 +60,11 @@ $('#txt-search').keyup(function(){
 				if ((val.nama.search(regex) != -1) || (val.noIC.search(regex) != -1)) {
 				  output += '<div class="col-md-6" well>';
 				  output += '<div class="col-md-7">';
-				  output += '<p class="badge badge-success">' + val.id + '</p>';
-				  output += '<p class="badge badge-secondary">' + val.nama + '</p>'
-				  output += '<p class="badge badge-primary">' + val.noIC + '</p>'
-				  output += '<p class="badge badge-light">' + val.sex + '</p>'
-				  output += '<p class="badge badge-warning">' + val.employeeStatus + '</p>'
+				  output += '<span class="badge badge-success">' + val.id + '</span>';
+				  output += '<span class="badge badge-secondary">' + val.nama + '</span>'
+				  output += '<span class="badge badge-primary">' + val.noIC + '</span>'
+				  output += '<span class="badge badge-light">' + val.sex + '</span>'
+				  output += '<span class="badge badge-warning">' + val.employeeStatus + '</span>'
 				  output += '<hr>';
 				  output += '</div>';
 				  output += '</div>';
