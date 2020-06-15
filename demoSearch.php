@@ -30,7 +30,6 @@
         padding-bottom: 3px
     }
 </style>
-<link rel="preload" href="https://adservice.google.com.my/adsid/integrator.js?domain=js-tutorials.com" as="script"><script type="text/javascript" src="https://adservice.google.com.my/adsid/integrator.js?domain=js-tutorials.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=js-tutorials.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=js-tutorials.com"></script>
 </head>
 <body>
 	
@@ -81,8 +80,8 @@ $('#txt-search').keyup(function(){
 				  output += '<p><span class="badge badge-secondary">' + val.nama + '</span></p>';
 				  output += '<p><span class="badge badge-primary">' + val.noIC + '</span></p>';
 				  output += '<p><span class="badge badge-light">' + val.sex + '</span></p>';
-				  output += '<p><span class="badge badge-warning">' + val.employeeStatus + '</span></p>'
-				  output += '<hr>'
+				  output += '<p><span class="badge badge-warning">' + val.employeeStatus + '</span></p>';
+				  output += '<hr>';
 				  output += '</div>';
 				  output += '</div>';
 				  if(count%2 == 0){
