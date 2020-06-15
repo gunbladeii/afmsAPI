@@ -67,7 +67,7 @@ $('#txt-search').keyup(function(){
 			{name:'id',index:'id', width:55},
 			{name:'noIC',index:'noIC', width:75},
 			{name:'sex',index:'sex', width:55},	
-			{name:'statonCode',index:'statonCode', width:55}		
+			{name:'stationCode',index:'stationCode', width:55}		
 		],
 		rowNum:10,
 		loadonce: true,
