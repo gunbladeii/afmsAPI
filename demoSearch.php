@@ -52,6 +52,7 @@
   </div>
 
 <script>
+//search table using json object method
 $(document).ready(function(){
 
 var data = "https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php";
@@ -88,7 +89,9 @@ $('#txt-search').keyup(function(){
    });
  </script>
 
+
 <script type="text/javascript">
+//test jgrid table
   $(document).ready(function(){
 		
 	$("#photos").jqGrid({
