@@ -53,27 +53,15 @@
 
   <div class="mypanel"></div>
 
-    <script>
-    $(document).ready(function(){
-    	$.getJSON('https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php', function(data) {
-        
-	        var text = `id: ${data.id}<br>
-	                    noIC: ${data.noIC}<br>
-	                    emel: ${data.emel}`
-	                    
-	        
-	        $(".mypanel").html(text);
-    	});
-    });
-    </script>
-
+    
 <script>
 //search table using json object method
 $(document).ready(function(){
+
 var staticUrl = 'https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php';
-var data = 	$.getJSON(staticUrl, function(data) {
-			  console.log(data);
-			});
+var data = 	$.getJSON(staticUrl, function(data2) {
+			  console.log(data2);
+
 $('#txt-search').keyup(function(){
             var searchField = $(this).val();
 			if(searchField === '')  {
