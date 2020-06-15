@@ -10,6 +10,7 @@
   </div>
 
 <script>
+$(document).ready(function(){
 $('#txt-search').keyup(function(){
             var searchField = $(this).val();
 			if(searchField === '')  {
@@ -40,6 +41,7 @@ $('#txt-search').keyup(function(){
 			  output += '</div>';
 			  $('#filter-records').html(output);
         });
+   });
  </script>
  </body>
  </html>
