@@ -11,6 +11,8 @@
 
 <script>
 $(document).ready(function(){
+
+var data = "https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php";
 $('#txt-search').keyup(function(){
             var searchField = $(this).val();
 			if(searchField === '')  {
