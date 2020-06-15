@@ -76,11 +76,11 @@ $('#txt-search').keyup(function(){
 				if ((val.nama.search(regex) != -1) || (val.noIC.search(regex) != -1)) {
 				  output += '<div class="col-md-6">';
 				  output += '<div class="col-md-7">';
-				  output += '<span class="badge badge-success">' + val.id + '</span>';
-				  output += '<p><span class="badge badge-secondary">' + val.nama + '</span></p>';
-				  output += '<p><span class="badge badge-primary">' + val.noIC + '</span></p>';
-				  output += '<p><span class="badge badge-light">' + val.sex + '</span></p>';
-				  output += '<p><span class="badge badge-warning">' + val.employeeStatus + '</span></p>';
+				  output += '<p class="badge badge-success">' + val.id + '</p>';
+				  output += '<p class="badge badge-secondary">' + val.nama + '</p>';
+				  output += '<p class="badge badge-primary">' + val.noIC + '</p>';
+				  output += '<p class="badge badge-light">' + val.sex + '</p>';
+				  output += '<p class="badge badge-warning">' + val.employeeStatus + '</p>';
 				  output += '<hr>';
 				  output += '</div>';
 				  output += '</div>';
