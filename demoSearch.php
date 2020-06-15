@@ -51,6 +51,20 @@
 	<div id="filter-records"></div>
   </div>
 
+  <div class="mypanel"></div>
+
+    <script>
+    $.getJSON('https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php', function(data) {
+        
+        var text = `id: ${data.id}<br>
+                    noIC: ${data.noIC}<br>
+                    emel: ${data.emel}`
+                    
+        
+        $(".mypanel").html(text);
+    });
+    </script>
+
 <script>
 //search table using json object method
 $(document).ready(function(){
@@ -113,7 +127,7 @@ $('#txt-search').keyup(function(){
 		sortorder: "desc",
 		caption:""
 	});
-	$("#photos").jqGrid('navGrid','#pager2',{edit:true,add:false,del:true});
+	$("#photos").jqGrid('navGrid','#pager2',{edit:false,add:false,del:false});
     /*var arrayReturn = [];
             $.ajax({
                 url: "https://jsonplaceholder.typicode.com/posts",
