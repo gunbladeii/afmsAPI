@@ -59,8 +59,8 @@
 $(document).ready(function(){
 
 var staticUrl = 'https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php';
-$.getJSON(staticUrl, function(data2) {
-			  var data = console.log(data2); });
+$.getJSON(staticUrl, function(data) {
+			  console.log(data); });
 
 $('#txt-search').keyup(function(){
             var searchField = $(this).val();
