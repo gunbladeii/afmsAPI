@@ -59,7 +59,7 @@
 $(document).ready(function(){
 
 var staticUrl = 'https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php';
-var data = $.getJSON(staticUrl, function(data2) {});
+$.getJSON(staticUrl, function(data) {
 
 $('#txt-search').keyup(function(){
             var searchField = $(this).val();
@@ -90,7 +90,8 @@ $('#txt-search').keyup(function(){
 			  });
 			  output += '</div>';
 			  $('#filter-records').html(output);
-        });
+        	});
+		});
    });
  </script>
 
