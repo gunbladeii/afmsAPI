@@ -27,7 +27,7 @@
 </div>
 
  <div class="container" style="padding:50px 250px;">
- 	<h3>Altus Staff Quick Search (by Name/IC Number</h3>
+ 	<h3>Altus Staff Quick Search (by Name/IC Number)</h3>
 	<form role="form">
         <div class="form-group">
           <input type="input" class="form-control input-lg" id="txt-search" placeholder="Type your search character">
