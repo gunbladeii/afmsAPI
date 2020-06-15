@@ -31,11 +31,16 @@
 <link rel="preload" href="https://adservice.google.com.my/adsid/integrator.js?domain=js-tutorials.com" as="script"><script type="text/javascript" src="https://adservice.google.com.my/adsid/integrator.js?domain=js-tutorials.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=js-tutorials.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=js-tutorials.com"></script>
 </head>
 <body>
-	<div class="col col-md-12">
+	
+<section class="content">
+<div class="content-wrapper">
+	<div class="col-sm-12">
 	 	<table id="photos" class="display table-responsive" cellspacing="0" width="100%">
 		</table>
 		<div id="pager2"></div>
     </div>
+</div>
+</section>
 
  <div class="container" style="padding:50px 250px;">
 	<form role="form">
