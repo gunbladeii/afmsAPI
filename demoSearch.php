@@ -61,7 +61,7 @@ $('#txt-search').keyup(function(){
 				  output += '<div class="col-md-6" well>';
 				  output += '<div class="col-md-7">';
 				  output += '<span class="badge badge-success">' + val.id + '</span>';
-				  output += '<span class="badge badge-secondary">' + val.nama + '</span>'
+				  output += '<span class="badge badge-secondary">' + val.nama.toUpperCase() + '</span>'
 				  output += '<span class="badge badge-primary">' + val.noIC + '</span>'
 				  output += '<span class="badge badge-light">' + val.sex + '</span>'
 				  output += '<span class="badge badge-warning">' + val.employeeStatus + '</span>'
