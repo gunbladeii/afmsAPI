@@ -81,10 +81,10 @@ $('#txt-search').keyup(function(){
 				  output += '<div class="col-md-6">';
 				  output += '<div class="col-md-7">';
 				  output += '<p class="badge badge-success">' + val.id + '</p>';
-				  output += '<p class="badge badge-secondary">' + val.nama + '</p>';
-				  output += '<p class="badge badge-primary">' + val.noIC + '</p>';
-				  output += '<p class="badge badge-light">' + val.sex + '</p>';
-				  output += '<p class="badge badge-warning">' + val.employeeStatus + '</p>';
+				  output += '<p class="badge badge-secondary">' + val.nama + '</p>'
+				  output += '<p class="badge badge-primary">' + val.noIC + '</p>'
+				  output += '<p class="badge badge-light">' + val.sex + '</p>'
+				  output += '<p class="badge badge-warning">' + val.employeeStatus + '</p>'
 				  output += '<hr>';
 				  output += '</div>';
 				  output += '</div>';
