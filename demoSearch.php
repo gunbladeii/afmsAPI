@@ -80,6 +80,7 @@ $('#txt-search').keyup(function(){
 				  output += '<p>' + val.noIC + '</p>';
 				  output += '<p>' + val.sex + '</p>';
 				  output += '<p>' + val.employeeStatus + '</p>'
+				  output += '<hr>'
 				  output += '</div>';
 				  output += '</div>';
 				  if(count%2 == 0){
