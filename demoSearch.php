@@ -54,14 +54,16 @@
   <div class="mypanel"></div>
 
     <script>
-    $.getJSON('https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php', function(data) {
+    $(document).ready(function(){
+    	$.getJSON('https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php', function(data) {
         
-        var text = `id: ${data.id}<br>
-                    noIC: ${data.noIC}<br>
-                    emel: ${data.emel}`
-                    
-        
-        $(".mypanel").html(text);
+	        var text = `id: ${data.id}<br>
+	                    noIC: ${data.noIC}<br>
+	                    emel: ${data.emel}`
+	                    
+	        
+	        $(".mypanel").html(text);
+    	});
     });
     </script>
 
