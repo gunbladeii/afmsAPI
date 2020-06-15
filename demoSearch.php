@@ -83,7 +83,7 @@ $('#txt-search').keyup(function(){
             var output = '<div class="row">';
             var count = 1;
 			  $.each(data, function(key, val){
-				if ((val.id.search(regex) != -1) || (val.noIC.search(regex) != -1)) {
+				if ((val.nama.search(regex) != -1) || (val.noIC.search(regex) != -1)) {
 				  output += '<div class="col-md-6 well">';
 				  output += '<div class="col-md-7">';
 				  output += '<h5>' + val.id + '</h5>';
