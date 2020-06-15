@@ -26,7 +26,7 @@
     </div>
 </div>
 
-
+<h3>Altus Staff Quick Search (by Name/IC Number</h3>
  <div class="container" style="padding:50px 250px;">
 	<form role="form">
         <div class="form-group">
