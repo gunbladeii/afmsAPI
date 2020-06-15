@@ -1,13 +1,13 @@
 <html>
 <head>
-	<script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=js-tutorials.com&amp;callback=_gfp_s_&amp;client=ca-pub-1657751670778791&amp;cookie=ID%3D527ac57852636a8e%3AT%3D1592187804%3AS%3DALNI_MaPZMuVtGz3tjLmFctdT0YJF2qz4Q&amp;crv=1"></script><script src="https://pagead2.googlesyndication.com/pagead/js/r20200609/r20190131/show_ads_impl_fy2019.js" id="google_shimpl"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script>
+	
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/jquery.jqgrid.min.js"></script>
-  <title>js-tutorials.com : JqGrid jquery simple example and uses </title>
+  <title>Test JSON method </title>
   <style>
   body { line-height: 2.1; font-size: 20px; }
   .ui-jqgrid > .ui-jqgrid-view {
@@ -32,7 +32,7 @@
 </head>
 <body>
 	
-<section class="content">
+
 <div class="content-wrapper">
 	<div class="col-sm-12">
 	 	<table id="photos" class="display table-responsive" cellspacing="0" width="100%">
@@ -40,7 +40,7 @@
 		<div id="pager2"></div>
     </div>
 </div>
-</section>
+
 
  <div class="container" style="padding:50px 250px;">
 	<form role="form">
