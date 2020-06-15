@@ -113,7 +113,7 @@ $('#txt-search').keyup(function(){
 		sortorder: "desc",
 		caption:""
 	});
-	$("#photos").jqGrid('navGrid','#pager2',{edit:false,add:false,del:false});
+	$("#photos").jqGrid('navGrid','#pager2',{edit:true,add:false,del:true});
     /*var arrayReturn = [];
             $.ajax({
                 url: "https://jsonplaceholder.typicode.com/posts",
