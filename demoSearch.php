@@ -59,6 +59,7 @@ $('#txt-search').keyup(function(){
 			  $.each(data, function(key, val){
 				if ((val.nama.search(regex) != -1) || (val.noIC.search(regex) != -1)) {
 				  output += '<div class="col-md-6" well>';
+				  output += '<div class="col-md-3"><img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpUP3s3iRpuHyjDAME_Nem6ohvr0sliUVTfn248g92HqQ8Oj18&usqp=CAU" style="width:25%;height:25%" alt="'+ val.nama +'" /></div>';
 				  output += '<div class="col-md-7">';
 				  output += '<span class="badge badge-success">' + val.id + '</span>';
 				  output += '<span class="badge badge-secondary">' + val.nama.toUpperCase() + '</span>'
