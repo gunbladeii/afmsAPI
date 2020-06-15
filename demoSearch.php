@@ -90,7 +90,7 @@ $('#txt-search').keyup(function(){
 				  output += '<p>' + val.nama + '</p>';
 				  output += '<p>' + val.noIC + '</p>';
 				  output += '<p>' + val.sex + '</p>';
-				  output += '<p>' + val.emploeeStatus + '</p>'
+				  output += '<p>' + val.employeeStatus + '</p>'
 				  output += '</div>';
 				  output += '</div>';
 				  if(count%2 == 0){
