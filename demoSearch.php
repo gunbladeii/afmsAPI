@@ -22,13 +22,13 @@
 <body>
 	
 
-<div class="content-wrapper">
+<!--<div class="content-wrapper">
 	<div class="col-sm-12">
 	 	<table id="photos" class="display table-responsive" cellspacing="0" width="100%">
 		</table>
 		<div id="pager2"></div>
     </div>
-</div>
+</div>-->
 
  <div class="container" style="padding:50px 250px;">
  	<h3>Altus Staff Quick Search (by Name/IC Number)</h3>
