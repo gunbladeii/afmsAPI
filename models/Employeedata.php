@@ -120,13 +120,13 @@
           $this->noIC = htmlspecialchars(strip_tags($this->noIC));
           $this->nama = htmlspecialchars(strip_tags($this->nama));
           $this->emel = htmlspecialchars(strip_tags($this->emel));
-          $this->sex = htmlspecialchars(strip_tags($this->sex));
+          $this->stationCode = htmlspecialchars(strip_tags($this->stationCode));
 
           // Bind data
           $stmt->bindParam(':noIC', $this->noIC);
           $stmt->bindParam(':nama', $this->nama);
           $stmt->bindParam(':emel', $this->emel);
-          $stmt->bindParam(':sex', $this->sex);
+          $stmt->bindParam(':stationCode', $this->stationCode);
 
           // Execute query
           if($stmt->execute()) {
