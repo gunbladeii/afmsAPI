@@ -13,6 +13,10 @@
 <script type="text/javascript" src="https://adservice.google.com.my/adsid/integrator.js?domain=js-tutorials.com"></script>
 <link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=js-tutorials.com" as="script">
 <script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=js-tutorials.com"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/jquery.jqgrid.min.js"></script>
 
 </head>
 <body>
