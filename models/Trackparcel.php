@@ -11,6 +11,7 @@
     public $addressTo;
     public $senderName;
     public $receiverName;
+    public $imgQR;
 
 
     // Constructor with DB
@@ -21,7 +22,7 @@
     // Get employeeData
     public function read() {
       // Create query
-      $query = 'SELECT id, code, addressTo, addressFrom, senderName, receiverName
+      $query = 'SELECT id, code, addressTo, addressFrom, senderName, receiverName, imgQR
                                 FROM ' . $this->table . ' 
                                 ORDER BY
                                   id ASC';
@@ -38,7 +39,7 @@
     // Get Single Post
     public function read_single() {
           // Create query
-          $query = 'SELECT id, code, addressTo, addressFrom, senderName, receiverName
+          $query = 'SELECT id, code, addressTo, addressFrom, senderName, receiverName, imgQR
                                 FROM ' . $this->table . '
                                     WHERE
                                       code = ?
@@ -62,13 +63,15 @@
           $this->addressTo = $row['addressTo'];
           $this->senderName = $row['senderName'];
           $this->receiverName = $row['receiverName'];
+          $this->imgQR = $row['imgQR'];
+
 
     }
 
     // Create employeeData
     public function create() {
           // Create query
-          $query = 'INSERT INTO ' . $this->table . ' SET code = :code, addressFrom = :addressFrom, addressTo = :addressTo, senderName = :senderName, receiverName = :receiverName';
+          $query = 'INSERT INTO ' . $this->table . ' SET code = :code, addressFrom = :addressFrom, addressTo = :addressTo, senderName = :senderName, receiverName = :receiverName, imgQR = :imgQR';
 
           // Prepare statement
           $stmt = $this->conn->prepare($query);
@@ -79,13 +82,15 @@
           $this->addressTo = htmlspecialchars(strip_tags($this->addressTo));
           $this->senderName = htmlspecialchars(strip_tags($this->senderName));
           $this->receiverName = htmlspecialchars(strip_tags($this->receiverName));
+          $this->imgQR = htmlspecialchars(strip_tags($this->imgQR));
 
           // Bind data
           $stmt->bindParam(':code', $this->code);
           $stmt->bindParam(':addressFrom', $this->addressFrom);
           $stmt->bindParam(':addressTo', $this->addressTo);
           $stmt->bindParam(':senderName', $this->senderName);
-          $stmt->bindParam(':receiverName', $this->receiverName);
+          $stmt->bindParam(':imgQR', $this->imgQR);          
+
 
           // Execute query
           if($stmt->execute()) {
@@ -102,7 +107,7 @@
     public function update() {
           // Create query
           $query = 'UPDATE ' . $this->table . '
-                                SET addressFrom = :addressFrom, addressTo = :addressTo, senderName = :senderName, receiverName = :receiverName
+                                SET addressFrom = :addressFrom, addressTo = :addressTo, senderName = :senderName, receiverName = :receiverName, imgQR = :imgQR
                                 WHERE code = :code';
 
           // Prepare statement
@@ -113,6 +118,7 @@
           $this->addressTo = htmlspecialchars(strip_tags($this->addressTo));
           $this->senderName = htmlspecialchars(strip_tags($this->senderName));
           $this->receiverName = htmlspecialchars(strip_tags($this->receiverName));
+          $this->imgQR = htmlspecialchars(strip_tags($this->imgQR));
           $this->code = htmlspecialchars(strip_tags($this->code));
 
           // Bind data
@@ -120,6 +126,7 @@
           $stmt->bindParam(':addressTo', $this->addressTo);
           $stmt->bindParam(':senderName', $this->senderName);
           $stmt->bindParam(':receiverName', $this->receiverName);
+          $stmt->bindParam(':imgQR', $this->imgQR);
           $stmt->bindParam(':code', $this->code);
 
           // Execute query

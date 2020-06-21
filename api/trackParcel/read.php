@@ -33,7 +33,8 @@
         'addressTo' => $addressTo,
         'addressFrom' => $addressFrom,
         'senderName' => $senderName,
-        'receiverName' => $receiverName
+        'receiverName' => $receiverName,
+        'imgQR' => $imgQR
       );
 
       // Push to "data"

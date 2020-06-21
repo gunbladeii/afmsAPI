@@ -24,6 +24,7 @@
   $post->addressTo = $data->addressTo;
   $post->senderName = $data->senderName;
   $post->receiverTo = $data->receiverTo;
+  $post->imgQR = $data->imgQR;
 
   // Update post
   if($post->update()) {

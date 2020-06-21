@@ -23,6 +23,7 @@
   $post->addressTo = $data->addressTo;
   $post->senderName = $data->senderName;
   $post->receiverName = $data->receiverName;
+   $post->imgQR = $data->imgQR;
 
   // Create post
   if($post->create()) {
