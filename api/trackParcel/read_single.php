@@ -4,7 +4,7 @@
   header('Content-Type: application/json');
 
   include_once '../../config/Database.php';
-  include_once '../../models/trackParcel.php';
+  include_once '../../models/Trackparcel.php';
 
   // Instantiate DB & connect
   $database = new Database();
