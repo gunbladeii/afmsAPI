@@ -27,7 +27,8 @@
     'addressTo' => $post->addressTo,
     'senderName' => $post->senderName,
     'receiverName' => $post->receiverName,
-    'imgQR' => $post->imgQR
+    'imgQR' => $post->imgQR,
+    'released' => $post->released
   );
 
   // Make JSON

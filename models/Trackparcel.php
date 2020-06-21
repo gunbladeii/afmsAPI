@@ -12,6 +12,7 @@
     public $senderName;
     public $receiverName;
     public $imgQR;
+    public $released;
 
 
     // Constructor with DB
@@ -64,6 +65,7 @@
           $this->senderName = $row['senderName'];
           $this->receiverName = $row['receiverName'];
           $this->imgQR = $row['imgQR'];
+          $this->released = $row['released'];
 
 
     }
