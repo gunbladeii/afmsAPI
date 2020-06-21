@@ -14,7 +14,7 @@
   $post = new Trackparcel($db);
 
   // Get ID
-  $post->noIC = isset($_GET['code']) ? $_GET['code'] : die();
+  $post->code = isset($_GET['code']) ? $_GET['code'] : die();
 
   // Get post
   $post->read_single();
