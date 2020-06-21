@@ -142,7 +142,7 @@
           $stmt = $this->conn->prepare($query);
 
           // Clean data
-          $this-code = htmlspecialchars(strip_tags($this-code));
+          $this->code = htmlspecialchars(strip_tags($this->code));
 
           // Bind data
           $stmt->bindParam(':code', $this->code);
