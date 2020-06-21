@@ -40,7 +40,7 @@
     // Get Single Post
     public function read_single() {
           // Create query
-          $query = 'SELECT id, code, addressTo, addressFrom, senderName, receiverName, imgQR
+          $query = 'SELECT id, code, addressTo, addressFrom, senderName, receiverName, imgQR, released
                                 FROM ' . $this->table . '
                                     WHERE
                                       code = ?
