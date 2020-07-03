@@ -35,7 +35,7 @@
 	<form role="form">
         <div class="form-group">
           <!--<input type="input" class="form-control input-lg" id="txt-search" placeholder="Type your search character">-->
-           <select id="txt-search">
+           <select id="txt-search" onchange="myFunction()">
 			  <option value="ali">ali</option>
 			  <option value="abu">abu</option>
 			  <option value="ahmad">ahmad</option>
@@ -52,12 +52,12 @@
     
 <script type="text/javascript">
 //search table using json object method
-$(document).ready(function(){
+//$(document).ready(function(){
 
 var staticUrl = 'https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php';
 $.getJSON(staticUrl, function(data) {
 
-$('#txt-search').onchange(function(){
+function myFunction() {
             var searchField = $(this).val();
 			if(searchField === '')  {
 				$('#filter-records').html('');
@@ -90,7 +90,7 @@ $('#txt-search').onchange(function(){
 			  $('#filter-records').html(output);
         	});
 		});
-   });
+   //});
  </script>
 
  <script type="text/javascript">
