@@ -34,14 +34,7 @@
  	<h3>Altus Staff Quick Search (by Name/IC Number)</h3>
 	<form role="form">
         <div class="form-group">
-          <!--<input type="input" class="form-control input-lg" id="txt-search" placeholder="Type your search character">-->
-           <select id="txt-search" onchange="myFunction()">
-			  <option value="ali">ali</option>
-			  <option value="abu">abu</option>
-			  <option value="ahmad">ahmad</option>
-			  <option value="ahmad">ahmad</option>
-			</select>
-
+          <input type="input" class="form-control input-lg" id="txt-search" placeholder="Type your search character">
         </div>
 	</form>
 	<div id="filter-records"></div>
@@ -52,12 +45,12 @@
     
 <script type="text/javascript">
 //search table using json object method
-//$(document).ready(function(){
+$(document).ready(function(){
 
 var staticUrl = 'https://iberkat.tech/afms/afmsAPI/api/employeeData/read.php';
 $.getJSON(staticUrl, function(data) {
 
-function myFunction() {
+$('#txt-search').keyup(function(){
             var searchField = $(this).val();
 			if(searchField === '')  {
 				$('#filter-records').html('');
@@ -88,9 +81,9 @@ function myFunction() {
 			  });
 			  output += '</div>';
 			  $('#filter-records').html(output);
-        	};//);
+        	});
 		});
-   //});
+   });
  </script>
 
  <script type="text/javascript">
