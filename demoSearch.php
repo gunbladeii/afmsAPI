@@ -88,7 +88,7 @@ function myFunction() {
 			  });
 			  output += '</div>';
 			  $('#filter-records').html(output);
-        	});
+        	};//);
 		});
    //});
  </script>
